@@ -5,8 +5,8 @@ $white:#ffffff;
 $pealred:#f14f55;
 $pealgrey:#f0f0f0;
 body{
-    // overflow-x: hidden;
-    // overflow-y: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
     font-family: 'Raleway', sans-serif;
   }
 .darkgrey_background{
@@ -97,6 +97,9 @@ body::-webkit-scrollbar-thumb {
 .navbar-default .navbar-nav>li>a{
     color:#fff;
 }
+.navbar_list{
+    margin-right: 55px;
+}
 
 .main-contents{
    
@@ -108,13 +111,44 @@ body::-webkit-scrollbar-thumb {
   }
 .about_our_company{
   min-height: 390px;
-  @extend .darkgrey_background
+  background: $darkgrey;
+    .container{
+        margin-top: 48px;
+        padding-bottom: 50px;
+        h3{
+            color:$white;
+        }
+        .subline{
+            color:#d94948;
+            font-weight: bolder;
+        }
+        .textline{
+            color:$white;   
+            margin-top: 40px;
+        }
+    }
+}
+.what_we_do{
+    min-height: 390px;
+    background: $white;
+        .container{
+            h3{
+                color: #10482b;
+            }
+            .subline{
+                color:#d94948;
+                font-weight: bolder;
+                margin-bottom: 40px;
+            }
+        }
 }
 .thumbnail{
     border: none;
 }
 .maid_bio_data{
     background: $pealgrey;
+    margin-top: 48px;
+    padding-bottom: 50px;
 }
 .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{
     border:none;
@@ -122,6 +156,29 @@ body::-webkit-scrollbar-thumb {
 .maid_thumbnail{
     padding: 25px;
 }
+.madi_bio_col{
+    margin-bottom: 20px;
+}
 .btn-danger{
     background-color: $pealred !important;
+}
+.primary_menu_bottom_row{
+    min-height: 148px;
+    line-height: 148px;
+    background: $primary-color;
+        a{
+            color:$white;
+        }
+        a:hover{
+            color:$pealred;
+            font-weight: bold;
+        }
+}
+.footer{
+    height: 50px;
+    background: $pealred;
+    color: $white;
+        p{
+            line-height: 50px;
+        }
 }

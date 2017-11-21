@@ -9,7 +9,7 @@
     <!-- Bootstrap -->
     <link href="stylesheets/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Flat UI -->
-    <link href="stylesheets/css/flat-ui.min.css" rel="stylesheet">
+    <link href="stylesheets/css/flat-ui.css" rel="stylesheet">
     <!-- Animate -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
     <!-- Main Style -->
@@ -25,8 +25,47 @@
 </head>
 
 <body>
+    <!-- Small Screen Navbar -->
+    <nav class="navbar navbar-inverse hidden-lg hidden-md" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <!-- <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> -->
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="img/albert_logo_sm.png" width="100" class="img-responsive animated fadeIn" alt="Image">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Service</a>
+                </li>
+                <li>
+                    <a href="#">Search Maid</a>
+                </li>
+                <li>
+                    <a href="#">Gallery</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+    <!-- Small Screen Navbar end -->
+
     <div class="container-fluid top_menu">
-        <div class="container top_container">
+        <div class="container top_container hidden-sm hidden-xs">
             <div class="row top_row">
                 <div class="col-md-3 logo_wrap">
                     <img src="img/albert_logo_sm.png" class="img-responsive animated fadeIn" alt="Image">
@@ -47,30 +86,31 @@
                             </span>
                         </div>
                         <div class="col-md-12 primary_nav">
+                            <!-- large screen nav -->
                             <nav class="navbar navbar-default" role="navigation">
                                 <!-- Collect the nav links, forms, and other content for toggling -->
                                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                                     <ul class="nav navbar-nav">
-                                        <li class="active">
+                                        <li class="active navbar_list">
                                             <a href="#">Home</a>
                                         </li>
-                                        <li>
+                                        <li class="navbar_list">
                                             <a href="#">Services</a>
                                         </li>
-                                        <li>
+                                        <li class="navbar_list">
                                             <a href="#">Search Maid</a>
                                         </li>
-                                        <li>
+                                        <li class="navbar_list">
                                             <a href="#">Gallery</a>
                                         </li>
-                                        <li>
+                                        <li class="navbar_list">
                                             <a href="#">Contact</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <!-- /.navbar-collapse -->
                             </nav>
-
+                            <!-- large screen nav -->
                         </div>
                     </div>
                 </div>
@@ -79,11 +119,11 @@
         <div class="row main-contents">
             <img src="img/albert_hero_bg.jpg" alt="" class="hero_img">
         </div>
-        <div class="row about_our_company">
-            <div class="container">
+        <div class="row about_our_company ">
+            <div class="container about_our_company_container animated">
                 <h3 class="text-center">About Our Company</h3>
-                <p class="text-center">This is our story :)</p>
-                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates est, quod atque expedita ad necessitatibus
+                <p class="text-center subline">This is our story :)</p>
+                <p class="text-center textline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates est, quod atque expedita ad necessitatibus
                     hic distinctio quisquam assumenda aut aspernatur vero accusantium exercitationem, minima repellendus
                     dignissimos delectus quidem eaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel numquam
                     labore, itaque consequuntur officiis maiores et expedita odit, cupiditate omnis dignissimos non suscipit
@@ -94,177 +134,352 @@
         <div class="row what_we_do">
             <div class="container">
                 <h3 class="text-center">What we do</h3>
-                <p class="text-center">This is why you will join us :)</p>
+                <p class="text-center subline">This is why you will join us :)</p>
                 <div class="row what_we_do_innderrow">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <div class="thumbnail">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 ">
+                        <div class="thumbnail what_we_do_tumb animated">
                             <img src="img/what_we_do_icon.png" alt="">
                             <div class="caption">
                                 <p class="text-center">
-                                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eveniet reiciendis facere totam. Fuga necessitatibus nihil inventore excepturi unde hic dolore deleniti? Neque eos, ipsa obcaecati incidunt nihil molestias voluptas.
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eveniet reiciendis facere totam. Fuga necessitatibus nihil
+                                    inventore excepturi unde hic dolore deleniti? Neque eos, ipsa obcaecati incidunt nihil
+                                    molestias voluptas.
                                 </p>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <div class="thumbnail">
-                                <img src="img/what_we_do_icon2.png" alt="">
-                                <div class="caption">
-                                    <p class="text-center">
-                                       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eveniet reiciendis facere totam. Fuga necessitatibus nihil inventore excepturi unde hic dolore deleniti? Neque eos, ipsa obcaecati incidunt nihil molestias voluptas.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                                <div class="thumbnail">
-                                    <img src="img/what_we_do_icon3.png" alt="">
-                                    <div class="caption">
-                                        <p class="text-center">
-                                           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eveniet reiciendis facere totam. Fuga necessitatibus nihil inventore excepturi unde hic dolore deleniti? Neque eos, ipsa obcaecati incidunt nihil molestias voluptas.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                </div>
-            </div>
-        </div>
-        <div class="row maid_bio_data">
-            <div class="container">
-                <h3 class="text-center">Maid bio data</h3>
-                <p class="text-center">This is latest Data :)</p>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                        <div class="thumbnail maid_thumbnail">
-                            <img src="http://via.placeholder.com/165x165/00b6aa/ffffff" alt="" class="img-circle">
+                        <div class="thumbnail what_we_do_tumb animated">
+                            <img src="img/what_we_do_icon2.png" alt="">
                             <div class="caption">
-                                <table class="table table-responsive">
-                                        <tr>
-                                            <td class="text-right">Name&nbsp:</td>
-                                            <td>Nuke</td>
-                                        </tr>
-                                        <tr>
-                                                <td class="text-right">Country&nbsp:</td>
-                                                <td>Indonesia</td>
-                                        </tr>
-                                        <tr>
-                                                <td class="text-right">Type&nbsp:</td>
-                                                <td>New</td>
-                                        </tr>
-                                        <tr>
-                                                <td class="text-right">Salary&nbsp:</td>
-                                                <td>4000</td>
-                                        </tr>
-                                        <tr>
-                                                <td class="text-right">Avaliable&nbsp:</td>
-                                                <td>Avaliable</td>
-                                        </tr>
-                                </table>
-                                <a href="" class="btn btn-block btn-danger">View Detail&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-chevron-right"></span></a>
+                                <p class="text-center">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eveniet reiciendis facere totam. Fuga necessitatibus nihil
+                                    inventore excepturi unde hic dolore deleniti? Neque eos, ipsa obcaecati incidunt nihil
+                                    molestias voluptas.
+                                </p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                            <div class="thumbnail maid_thumbnail">
-                                <img src="http://via.placeholder.com/165x165/00b6aa/ffffff" alt="" class="img-circle">
-                                <div class="caption">
-                                    <table class="table table-responsive">
-                                            <tr>
-                                                <td class="text-right">Name&nbsp:</td>
-                                                <td>Nuke</td>
-                                            </tr>
-                                            <tr>
-                                                    <td class="text-right">Country&nbsp:</td>
-                                                    <td>Indonesia</td>
-                                            </tr>
-                                            <tr>
-                                                    <td class="text-right">Type&nbsp:</td>
-                                                    <td>New</td>
-                                            </tr>
-                                            <tr>
-                                                    <td class="text-right">Salary&nbsp:</td>
-                                                    <td>4000</td>
-                                            </tr>
-                                            <tr>
-                                                    <td class="text-right">Avaliable&nbsp:</td>
-                                                    <td>Avaliable</td>
-                                            </tr>
-                                    </table>   
-                                    <a href="" class="btn btn-block btn-danger">View Detail&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-chevron-right"></span></a>
-                                </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="thumbnail what_we_do_tumb animated">
+                            <img src="img/what_we_do_icon3.png" alt="">
+                            <div class="caption">
+                                <p class="text-center">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eveniet reiciendis facere totam. Fuga necessitatibus nihil
+                                    inventore excepturi unde hic dolore deleniti? Neque eos, ipsa obcaecati incidunt nihil
+                                    molestias voluptas.
+                                </p>
                             </div>
                         </div>
-
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                                <div class="thumbnail maid_thumbnail">
-                                    <img src="http://via.placeholder.com/165x165/00b6aa/ffffff" alt="" class="img-circle">
-                                    <div class="caption">
-                                        <table class="table table-responsive">
-                                                <tr>
-                                                    <td class="text-right">Name&nbsp:</td>
-                                                    <td>Nuke</td>
-                                                </tr>
-                                                <tr>
-                                                        <td class="text-right">Country&nbsp:</td>
-                                                        <td>Indonesia</td>
-                                                </tr>
-                                                <tr>
-                                                        <td class="text-right">Type&nbsp:</td>
-                                                        <td>New</td>
-                                                </tr>
-                                                <tr>
-                                                        <td class="text-right">Salary&nbsp:</td>
-                                                        <td>4000</td>
-                                                </tr>
-                                                <tr>
-                                                        <td class="text-right">Avaliable&nbsp:</td>
-                                                        <td>Avaliable</td>
-                                                </tr>
-                                        </table>   
-                                        <a href="" class="btn btn-block btn-danger">View Detail&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-chevron-right"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                                    <div class="thumbnail maid_thumbnail">
-                                        <img src="http://via.placeholder.com/165x165/00b6aa/ffffff" alt="" class="img-circle">
-                                        <div class="caption">
-                                            <table class="table table-responsive">
-                                                    <tr>
-                                                        <td class="text-right">Name&nbsp:</td>
-                                                        <td>Nuke</td>
-                                                    </tr>
-                                                    <tr>
-                                                            <td class="text-right">Country&nbsp:</td>
-                                                            <td>Indonesia</td>
-                                                    </tr>
-                                                    <tr>
-                                                            <td class="text-right">Type&nbsp:</td>
-                                                            <td>New</td>
-                                                    </tr>
-                                                    <tr>
-                                                            <td class="text-right">Salary&nbsp:</td>
-                                                            <td>4000</td>
-                                                    </tr>
-                                                    <tr>
-                                                            <td class="text-right">Avaliable&nbsp:</td>
-                                                            <td>Avaliable</td>
-                                                    </tr>
-                                            </table>   
-                                            <a href="" class="btn btn-block btn-danger">View Detail&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-chevron-right"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                    
-                    
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="row maid_bio_data">
+            <div class="container" style="margin-bottom:15px;">
+                <h3 class="text-center">Maid bio data</h3>
+                <p class="text-center">This is latest Data :)</p>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 madi_bio_col">
+                        <div class="thumbnail maid_thumbnail animated">
+                            <img src="http://via.placeholder.com/165x165/00b6aa/ffffff" alt="" class="img-circle">
+                            <div class="caption">
+                                <table class="table table-responsive">
+                                    <tr>
+                                        <td class="text-right">Name&nbsp:</td>
+                                        <td>Nuke</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Country&nbsp:</td>
+                                        <td>Indonesia</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Type&nbsp:</td>
+                                        <td>New</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Salary&nbsp:</td>
+                                        <td>4000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Avaliable&nbsp:</td>
+                                        <td>Avaliable</td>
+                                    </tr>
+                                </table>
+                                <a href="" class="btn btn-block btn-danger">View Detail&nbsp&nbsp&nbsp
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 madi_bio_col">
+                        <div class="thumbnail maid_thumbnail animated">
+                            <img src="http://via.placeholder.com/165x165/00b6aa/ffffff" alt="" class="img-circle">
+                            <div class="caption">
+                                <table class="table table-responsive">
+                                    <tr>
+                                        <td class="text-right">Name&nbsp:</td>
+                                        <td>Nuke</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Country&nbsp:</td>
+                                        <td>Indonesia</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Type&nbsp:</td>
+                                        <td>New</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Salary&nbsp:</td>
+                                        <td>4000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Avaliable&nbsp:</td>
+                                        <td>Avaliable</td>
+                                    </tr>
+                                </table>
+                                <a href="" class="btn btn-block btn-danger">View Detail&nbsp&nbsp&nbsp
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 madi_bio_col">
+                        <div class="thumbnail maid_thumbnail animated">
+                            <img src="http://via.placeholder.com/165x165/00b6aa/ffffff" alt="" class="img-circle">
+                            <div class="caption">
+                                <table class="table table-responsive">
+                                    <tr>
+                                        <td class="text-right">Name&nbsp:</td>
+                                        <td>Nuke</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Country&nbsp:</td>
+                                        <td>Indonesia</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Type&nbsp:</td>
+                                        <td>New</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Salary&nbsp:</td>
+                                        <td>4000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Avaliable&nbsp:</td>
+                                        <td>Avaliable</td>
+                                    </tr>
+                                </table>
+                                <a href="" class="btn btn-block btn-danger">View Detail&nbsp&nbsp&nbsp
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 madi_bio_col">
+                        <div class="thumbnail maid_thumbnail animated">
+                            <img src="http://via.placeholder.com/165x165/00b6aa/ffffff" alt="" class="img-circle">
+                            <div class="caption">
+                                <table class="table table-responsive">
+                                    <tr>
+                                        <td class="text-right">Name&nbsp:</td>
+                                        <td>Nuke</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Country&nbsp:</td>
+                                        <td>Indonesia</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Type&nbsp:</td>
+                                        <td>New</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Salary&nbsp:</td>
+                                        <td>4000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Avaliable&nbsp:</td>
+                                        <td>Avaliable</td>
+                                    </tr>
+                                </table>
+                                <a href="" class="btn btn-block btn-danger">View Detail&nbsp&nbsp&nbsp
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 madi_bio_col">
+                        <div class="thumbnail maid_thumbnail animated">
+                            <img src="http://via.placeholder.com/165x165/00b6aa/ffffff" alt="" class="img-circle">
+                            <div class="caption">
+                                <table class="table table-responsive">
+                                    <tr>
+                                        <td class="text-right">Name&nbsp:</td>
+                                        <td>Nuke</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Country&nbsp:</td>
+                                        <td>Indonesia</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Type&nbsp:</td>
+                                        <td>New</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Salary&nbsp:</td>
+                                        <td>4000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Avaliable&nbsp:</td>
+                                        <td>Avaliable</td>
+                                    </tr>
+                                </table>
+                                <a href="" class="btn btn-block btn-danger">View Detail&nbsp&nbsp&nbsp
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 madi_bio_col">
+                        <div class="thumbnail maid_thumbnail animated">
+                            <img src="http://via.placeholder.com/165x165/00b6aa/ffffff" alt="" class="img-circle">
+                            <div class="caption">
+                                <table class="table table-responsive">
+                                    <tr>
+                                        <td class="text-right">Name&nbsp:</td>
+                                        <td>Nuke</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Country&nbsp:</td>
+                                        <td>Indonesia</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Type&nbsp:</td>
+                                        <td>New</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Salary&nbsp:</td>
+                                        <td>4000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Avaliable&nbsp:</td>
+                                        <td>Avaliable</td>
+                                    </tr>
+                                </table>
+                                <a href="" class="btn btn-block btn-danger">View Detail&nbsp&nbsp&nbsp
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 madi_bio_col">
+                        <div class="thumbnail maid_thumbnail animated">
+                            <img src="http://via.placeholder.com/165x165/00b6aa/ffffff" alt="" class="img-circle">
+                            <div class="caption">
+                                <table class="table table-responsive">
+                                    <tr>
+                                        <td class="text-right">Name&nbsp:</td>
+                                        <td>Nuke</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Country&nbsp:</td>
+                                        <td>Indonesia</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Type&nbsp:</td>
+                                        <td>New</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Salary&nbsp:</td>
+                                        <td>4000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Avaliable&nbsp:</td>
+                                        <td>Avaliable</td>
+                                    </tr>
+                                </table>
+                                <a href="" class="btn btn-block btn-danger">View Detail&nbsp&nbsp&nbsp
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 madi_bio_col">
+                        <div class="thumbnail maid_thumbnail animated">
+                            <img src="http://via.placeholder.com/165x165/00b6aa/ffffff" alt="" class="img-circle">
+                            <div class="caption">
+                                <table class="table table-responsive">
+                                    <tr>
+                                        <td class="text-right">Name&nbsp:</td>
+                                        <td>Nuke</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Country&nbsp:</td>
+                                        <td>Indonesia</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Type&nbsp:</td>
+                                        <td>New</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Salary&nbsp:</td>
+                                        <td>4000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">Avaliable&nbsp:</td>
+                                        <td>Avaliable</td>
+                                    </tr>
+                                </table>
+                                <a href="" class="btn btn-block btn-danger">View Detail&nbsp&nbsp&nbsp
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- maid bio row end -->
+                <a href="" class="btn btn-block btn-danger">View All&nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+        <div class="row primary_menu_bottom_row">
+            <div class="container">
+                <div class="row primary_menu_bottom_inner">
+                    <div class="col-md-2 col-md-offset-1">
+                        <a href="">Home</a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="">Home</a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="">Home</a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="">Home</a>
+                    </div>
+                    <div class="col-md-2 col-md-offset-1">
+                        <a href="">Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer">
+            <div class="container">
+                <p class="text-center">© 2017 Innov8te. All rights reserved</p>
+            </div>
+        </div>
+
     </div>
     <!-- top menu full-wrapper -->
 
@@ -280,6 +495,33 @@
     <script src="js/vendor/video.js"></script>
     <script src="js/flat-ui.min.js"></script>
     <script src="js/modernizer.js"></script>
+    <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 500) {
+                console.log("event trigger");
+                $(".about_our_company_container").addClass("zoomIn");
+            } else {
+                $(".about_our_company_container").removeClass("zoomIn");
+            }
+
+            if (scroll >= 700) {
+                console.log("event trigger 2");
+                $(".what_we_do_tumb").addClass("bounceInUp");
+            } else {
+                $(".what_we_do_tumb").removeClass("bounceInUp");
+            }
+
+            if (scroll >= 1500) {
+                console.log("event trigger 2");
+                $(".maid_thumbnail").addClass("flipInY");
+            } else {
+                $(".maid_thumbnail").removeClass("flipInY");
+            }
+
+        }
+        );
+    </script>
 </body>
 
 </html>
