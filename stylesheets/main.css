@@ -1,0 +1,93 @@
+body {
+  font-family: 'Raleway', sans-serif; }
+
+.darkgrey_background, .about_our_company {
+  background: #898686; }
+
+body::-webkit-scrollbar {
+  width: 0.4em; }
+
+body::-webkit-scrollbar-track {
+  background-color: #f14f55; }
+
+body::-webkit-scrollbar-thumb {
+  background-color: #00b6aa;
+  outline: 1px solid #f14f55; }
+
+.top_menu {
+  height: 141px;
+  background-image: url(../img/top_menu_bg.jpg);
+  background-repeat: repeat-x; }
+  .top_menu .top_container .top_row .logo_wrap {
+    padding: 13px 0px; }
+    .top_menu .top_container .top_row .logo_wrap img {
+      display: block;
+      margin: 0px auto; }
+  .top_menu .top_container .top_row .primary_menu_wrap {
+    height: 142px;
+    background-image: url(../img/primary_menu_bg.png);
+    background-repeat: repeat-x; }
+    .top_menu .top_container .top_row .primary_menu_wrap .direct_contact_row {
+      height: 67px; }
+      .top_menu .top_container .top_row .primary_menu_wrap .direct_contact_row .hotline_contact {
+        height: 67px; }
+        .top_menu .top_container .top_row .primary_menu_wrap .direct_contact_row .hotline_contact .top_span {
+          display: block;
+          height: 40px;
+          margin-top: 10px;
+          padding-left: 120px;
+          padding-top: 5px; }
+          .top_menu .top_container .top_row .primary_menu_wrap .direct_contact_row .hotline_contact .top_span img, .top_menu .top_container .top_row .primary_menu_wrap .direct_contact_row .hotline_contact .top_span p {
+            float: left; }
+      .top_menu .top_container .top_row .primary_menu_wrap .direct_contact_row .address_contact {
+        height: 67px;
+        padding-left: 110px; }
+        .top_menu .top_container .top_row .primary_menu_wrap .direct_contact_row .address_contact .top_span img {
+          float: left;
+          padding-top: 15px; }
+        .top_menu .top_container .top_row .primary_menu_wrap .direct_contact_row .address_contact .top_span p {
+          float: left;
+          padding-top: 7px;
+          margin-left: 15px;
+          line-height: 24px; }
+        .top_menu .top_container .top_row .primary_menu_wrap .direct_contact_row .address_contact .top_span p {
+          text-align: left; }
+    .top_menu .top_container .top_row .primary_menu_wrap .primary_nav .navbar-default {
+      background-color: transparent !important; }
+
+.navbar-default .navbar-nav > li > a {
+  margin-top: 10px; }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #f14f55; }
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #f14f55; }
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff; }
+
+.hero_img {
+  width: 100%;
+  margin-top: -2px;
+  z-index: 0; }
+
+.about_our_company {
+  min-height: 390px; }
+
+.thumbnail {
+  border: none; }
+
+.maid_bio_data {
+  background: #f0f0f0; }
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+  border: none; }
+
+.maid_thumbnail {
+  padding: 25px; }
+
+.btn-danger {
+  background-color: #f14f55 !important; }
+
+/*# sourceMappingURL=main.css.map */
