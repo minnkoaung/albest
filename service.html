@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Albert Resources | Services </title>
+    <!-- Bootstrap -->
+    <link href="stylesheets/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Flat UI -->
+    <link href="stylesheets/css/flat-ui.css" rel="stylesheet">
+    <!-- Animate -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+    <!-- Main Style -->
+    <link href="stylesheets/main.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+
+    <style>
+        .navbar-inverse .navbar-toggle:before {
+            content: "Menu" !important;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            padding: 4px 10px;
+            font-size: 14px;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            color: #00b6aa;
+            background: transparent;
+        }
+
+        .slick-track {
+            height: 250px !important;
+        }
+
+        .slick-dots li button:before {
+            font-size: 10px;
+        }
+
+        .slick-dots li.slick-active button:before {
+            color: #00b6aa;
+        }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+    <script src="js/vendor/html5shiv.js"></script>
+    <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- Small Screen Navbar -->
+    <nav class="navbar navbar-inverse hidden-lg hidden-md" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <!-- <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> -->
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="img/albert_logo_sm.png" width="100" class="img-responsive animated fadeIn" alt="Image">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li class="active">
+                    <a href="service.html">Service</a>
+                </li>
+                <li>
+                    <a href="search.html">Search Maid</a>
+                </li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+    <!-- Small Screen Navbar end -->
+
+    <div class="container-fluid top_menu">
+        <div class="container top_container hidden-sm hidden-xs">
+            <div class="row top_row">
+                <div class="col-md-3 logo_wrap">
+                    <img src="img/albert_logo_sm.png" class="img-responsive animated tada" alt="Image">
+                </div>
+                <div class="col-md-9 primary_menu_wrap">
+                    <div class="row direct_contact_row">
+                        <div class="col-md-6 hotline_contact">
+                            <span class="hotline_contact_inline top_span animated fadeInDown delay0-5">
+                                <img src="img/contact_phone_ico.png" alt="Contact Phone Number" class="hotline_contact_inline_icon">
+                                <p>+65 6342 2969</p>
+                            </span>
+                        </div>
+                        <div class="col-md-6 address_contact animated fadeInDown delay2">
+                            <span class="top_span address_span ">
+                                <img src="img/contact_address_icon.png" alt="Contact Phone Number" class="address_contact_inline_icon">
+                                <p>18 Eastwood Terrace Eastwood
+                                    <br> Ville Singapore 486488</p>
+                            </span>
+                        </div>
+                        <div class="col-md-12 primary_nav">
+                            <!-- large screen nav -->
+                            <nav class="navbar navbar-default" role="navigation">
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                                    <ul class="nav navbar-nav">
+                                        <li class="navbar_list">
+                                            <a href="home.html">Home</a>
+                                        </li>
+                                        <li class="active navbar_list">
+                                            <a href="service.html">Services</a>
+                                        </li>
+                                        <li class="navbar_list">
+                                            <a href="search.html">Search Maid</a>
+                                        </li>
+                                        <li class="navbar_list">
+                                            <a href="gallery.html">Gallery</a>
+                                        </li>
+                                        <li class="navbar_list">
+                                            <a href="content.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /.navbar-collapse -->
+                            </nav>
+                            <!-- large screen nav -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="maincontent">
+            <div class="row pic-contents">
+                <img src="img/albert_services_hero_bg.jpg" alt="" class="hero_img">
+            </div>
+            <div class="row about_our_company services ">
+                <div class="container about_our_company_container services_container animated">
+                    <h3 class="text-center">Services</h3>
+                    <p class="text-center subline">Industries We Serve :)</p>
+                    <p class="text-center textline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates est, quod atque expedita ad necessitatibus
+                        hic distinctio quisquam assumenda aut aspernatur vero accusantium exercitationem, minima repellendus
+                        dignissimos delectus quidem eaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel numquam
+                        labore, itaque consequuntur officiis maiores et expedita odit, cupiditate omnis dignissimos non suscipit
+                        accusantium necessitatibus quae explicabo dicta voluptatem harum.
+                    </p>
+                </div>
+            </div>
+            <div class="row what_we_do">
+                <div class="container">
+                    <h3 class="text-center">What we do</h3>
+                    <p class="text-center subline">This is why you will join us :)</p>
+                    <div class="row what_we_do_innderrow">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 ">
+                            <div class="thumbnail what_we_do_tumb animated">
+                                <img src="img/what_we_do_icon.png" alt="">
+                                <div class="caption">
+                                    <p class="text-center">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eveniet reiciendis facere totam. Fuga necessitatibus nihil
+                                        inventore excepturi unde hic dolore deleniti? Neque eos, ipsa obcaecati incidunt
+                                        nihil molestias voluptas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="thumbnail what_we_do_tumb animated">
+                                <img src="img/what_we_do_icon2.png" alt="">
+                                <div class="caption">
+                                    <p class="text-center">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eveniet reiciendis facere totam. Fuga necessitatibus nihil
+                                        inventore excepturi unde hic dolore deleniti? Neque eos, ipsa obcaecati incidunt
+                                        nihil molestias voluptas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="thumbnail what_we_do_tumb animated">
+                                <img src="img/what_we_do_icon3.png" alt="">
+                                <div class="caption">
+                                    <p class="text-center">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eveniet reiciendis facere totam. Fuga necessitatibus nihil
+                                        inventore excepturi unde hic dolore deleniti? Neque eos, ipsa obcaecati incidunt
+                                        nihil molestias voluptas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row what_we_do_innderrow">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 ">
+                            <div class="thumbnail slider_tumb animated">
+                                <img src="img/what_we_do_icon.png" alt="">
+                                <div class="caption">
+                                    <p class="text-center">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eveniet reiciendis facere totam. Fuga necessitatibus nihil
+                                        inventore excepturi unde hic dolore deleniti? Neque eos, ipsa obcaecati incidunt
+                                        nihil molestias voluptas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="thumbnail slider_tumb animated">
+                                <img src="img/what_we_do_icon2.png" alt="">
+                                <div class="caption">
+                                    <p class="text-center">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eveniet reiciendis facere totam. Fuga necessitatibus nihil
+                                        inventore excepturi unde hic dolore deleniti? Neque eos, ipsa obcaecati incidunt
+                                        nihil molestias voluptas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="thumbnail slider_tumb animated">
+                                <img src="img/what_we_do_icon3.png" alt="">
+                                <div class="caption">
+                                    <p class="text-center">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eveniet reiciendis facere totam. Fuga necessitatibus nihil
+                                        inventore excepturi unde hic dolore deleniti? Neque eos, ipsa obcaecati incidunt
+                                        nihil molestias voluptas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row maid_bio_data ind_row">
+                <div class="container" style="margin-bottom:15px;">
+                    <h3 class="text-center">Industries We Serve</h3>
+                    <p class="text-center">This is how our works looks like :) :)</p>
+                    <div class="row">
+
+                        <div class="col-md-12 slick-row">
+
+                            <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3 slick-content">
+                                <div class="thumbnail slider_tumb animated">
+                                    <img src="img/slider_pic.jpg" alt="">
+                                    <div class="caption">
+                                        <p class="text-center">
+                                            Lorem ipsum dolor
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3 slick-content">
+                                <div class="thumbnail slider_tumb animated">
+                                    <img src="img/slider_pic.jpg" alt="">
+                                    <div class="caption">
+                                        <p class="text-center">
+                                            Lorem ipsum dolor
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3 slick-content">
+                                <div class="thumbnail slider_tumb animated">
+                                    <img src="img/slider_pic.jpg" alt="">
+                                    <div class="caption">
+                                        <p class="text-center">
+                                            Lorem ipsum dolor
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3 slick-content">
+                                <div class="thumbnail slider_tumb animated">
+                                    <img src="img/slider_pic.jpg" alt="">
+                                    <div class="caption">
+                                        <p class="text-center">
+                                            Lorem ipsum dolor
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3 slick-content">
+                                <div class="thumbnail slider_tumb animated">
+                                    <img src="http://via.placeholder.com/200x150/00b6aa/ffffff" alt="" class="img-rounded">
+                                    <div class="caption">
+                                        <p class="text-center">
+                                            Lorem ipsum dolor
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3 slick-content">
+                                <div class="thumbnail slider_tumb animated">
+                                    <img src="http://via.placeholder.com/200x150/00b6aa/ffffff" alt="" class="img-rounded">
+                                    <div class="caption">
+                                        <p class="text-center">
+                                            Lorem ipsum dolor
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3 slick-content">
+                                <div class="thumbnail slider_tumb animated">
+                                    <img src="img/slider_pic.jpg" alt="">
+                                    <div class="caption">
+                                        <p class="text-center">
+                                            Lorem ipsum dolor
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3 slick-content">
+                                <div class="thumbnail slider_tumb animated">
+                                    <img src="img/slider_pic.jpg" alt="">
+                                    <div class="caption">
+                                        <p class="text-center">
+                                            Lorem ipsum dolor
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3 slick-content">
+                                <div class="thumbnail slider_tumb animated">
+                                    <img src="http://via.placeholder.com/200x150/00b6aa/ffffff" alt="" class="img-rounded">
+                                    <div class="caption">
+                                        <p class="text-center">
+                                            Lorem ipsum dolor
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+                        <!-- slickrow end -->
+                    </div>
+                    <!-- maid bio row end -->
+                </div>
+            </div>
+            <div class="row primary_menu_bottom_row">
+                <div class="container">
+                    <div class="row primary_menu_bottom_inner">
+                        <div class="col-md-2 col-md-offset-1">
+                            <a href="home.html">Home</a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="services.html">Services</a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="search.html">Search Maid</a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="gallery.html">Gallery</a>
+                        </div>
+                        <div class="col-md-2 col-md-offset-1">
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer">
+                <div class="container">
+                    <p class="text-center">© 2017 Innov8te. All rights reserved</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- top menu full-wrapper -->
+    <!-- jQuery-->
+    <script src="js/vendor/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script> -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <script src="js/vendor/video.js"></script>
+    <script src="js/flat-ui.min.js"></script>
+    <script src="js/modernizer.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slick-row').slick({
+                dots: true,
+                infinite: false,
+                speed: 400,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                autoplay: true,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true,
+                            arrows: true,
+                            centerMode: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+        });
+    </script>
+    <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 500) {
+                console.log("event trigger");
+                $(".about_our_company_container").addClass("zoomIn");
+            } else {
+                $(".about_our_company_container").removeClass("zoomIn");
+            }
+
+            if (scroll >= 700) {
+                console.log("event trigger 2");
+                $(".slider_tumb").addClass("bounceInUp");
+            } else {
+                $(".what_we_do_tumb").removeClass("bounceInUp");
+            }
+
+            if (scroll >= 1400) {
+                console.log("event trigger 2");
+                $(".maid_thumbnail").addClass("flipInY");
+            } else {
+                $(".maid_thumbnail").removeClass("flipInY");
+            }
+
+        }
+        );
+    </script>
+</body>
+
+</html>

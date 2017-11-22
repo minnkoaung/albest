@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Albert Resources</title>
+    <title>Albert Resources | Home </title>
     <!-- Bootstrap -->
     <link href="stylesheets/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Flat UI -->
@@ -16,6 +16,18 @@
     <link href="stylesheets/main.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <style>
+        .navbar-inverse .navbar-toggle:before {
+            content: "Menu" !important;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            padding: 4px 10px;
+            font-size: 14px;
+        }
+        /* Removes the default 20px margin and creates some padding space for the indicators and controls */
+
+    </style>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
@@ -44,19 +56,19 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                 <li class="active">
-                    <a href="#">Home</a>
+                    <a href="home.html">Home</a>
                 </li>
                 <li>
-                    <a href="#">Service</a>
+                    <a href="service.html">Service</a>
                 </li>
                 <li>
-                    <a href="#">Search Maid</a>
+                    <a href="search.html">Search Maid</a>
                 </li>
                 <li>
-                    <a href="#">Gallery</a>
+                    <a href="gallery.html">Gallery</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="contact.html">Contact</a>
                 </li>
             </ul>
         </div>
@@ -68,17 +80,17 @@
         <div class="container top_container hidden-sm hidden-xs">
             <div class="row top_row">
                 <div class="col-md-3 logo_wrap">
-                    <img src="img/albert_logo_sm.png" class="img-responsive animated fadeIn" alt="Image">
+                    <img src="img/albert_logo_sm.png" class="img-responsive animated tada" alt="Image">
                 </div>
                 <div class="col-md-9 primary_menu_wrap">
                     <div class="row direct_contact_row">
                         <div class="col-md-6 hotline_contact">
-                            <span class="hotline_contact_inline top_span">
+                            <span class="hotline_contact_inline top_span animated fadeInDown delay0-5">
                                 <img src="img/contact_phone_ico.png" alt="Contact Phone Number" class="hotline_contact_inline_icon">
                                 <p>+65 6342 2969</p>
                             </span>
                         </div>
-                        <div class="col-md-6 address_contact">
+                        <div class="col-md-6 address_contact animated fadeInDown delay2">
                             <span class="top_span address_span ">
                                 <img src="img/contact_address_icon.png" alt="Contact Phone Number" class="address_contact_inline_icon">
                                 <p>18 Eastwood Terrace Eastwood
@@ -92,19 +104,19 @@
                                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                                     <ul class="nav navbar-nav">
                                         <li class="active navbar_list">
-                                            <a href="#">Home</a>
+                                            <a href="home.html">Home</a>
                                         </li>
                                         <li class="navbar_list">
-                                            <a href="#">Services</a>
+                                            <a href="servie.html">Services</a>
                                         </li>
                                         <li class="navbar_list">
-                                            <a href="#">Search Maid</a>
+                                            <a href="search.html">Search Maid</a>
                                         </li>
                                         <li class="navbar_list">
-                                            <a href="#">Gallery</a>
+                                            <a href="gallery.html">Gallery</a>
                                         </li>
                                         <li class="navbar_list">
-                                            <a href="#">Contact</a>
+                                            <a href="content.html">Contact</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -116,7 +128,8 @@
                 </div>
             </div>
         </div>
-        <div class="row main-contents">
+        <div class="maincontent">
+        <div class="row pic-contents">
             <img src="img/albert_hero_bg.jpg" alt="" class="hero_img">
         </div>
         <div class="row about_our_company ">
@@ -448,28 +461,32 @@
 
                 </div>
                 <!-- maid bio row end -->
-                <a href="" class="btn btn-block btn-danger">View All&nbsp&nbsp&nbsp
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
+
+                <div class="col-md-12 text-center">
+                    <a href="" class="btn btn-danger">View All&nbsp&nbsp&nbsp
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+
+                </div>
             </div>
         </div>
         <div class="row primary_menu_bottom_row">
             <div class="container">
                 <div class="row primary_menu_bottom_inner">
                     <div class="col-md-2 col-md-offset-1">
-                        <a href="">Home</a>
+                        <a href="home.html">Home</a>
                     </div>
                     <div class="col-md-2">
-                        <a href="">Home</a>
+                        <a href="services.html">Services</a>
                     </div>
                     <div class="col-md-2">
-                        <a href="">Home</a>
+                        <a href="search.html">Search Maid</a>
                     </div>
                     <div class="col-md-2">
-                        <a href="">Home</a>
+                        <a href="gallery.html">Gallery</a>
                     </div>
                     <div class="col-md-2 col-md-offset-1">
-                        <a href="">Home</a>
+                        <a href="contact.html">Contact</a>
                     </div>
                 </div>
             </div>
@@ -481,12 +498,9 @@
         </div>
 
     </div>
+
+</div>
     <!-- top menu full-wrapper -->
-
-
-
-
-
     <!-- jQuery-->
     <script src="js/vendor/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -512,7 +526,7 @@
                 $(".what_we_do_tumb").removeClass("bounceInUp");
             }
 
-            if (scroll >= 1500) {
+            if (scroll >= 1400) {
                 console.log("event trigger 2");
                 $(".maid_thumbnail").addClass("flipInY");
             } else {
@@ -521,6 +535,12 @@
 
         }
         );
+
+        $(document).ready(function() {
+            $('#myCarousel').carousel({
+                interval: 10000
+            })
+        });
     </script>
 </body>
 

@@ -16,6 +16,36 @@ body::-webkit-scrollbar-thumb {
   background-color: #00b6aa;
   outline: 1px solid #f14f55; }
 
+.delay0-5 {
+  -animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s; }
+
+.delay1 {
+  -animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s; }
+
+.delay1-3 {
+  -animation-delay: 1.3s;
+  -webkit-animation-delay: 1.3s;
+  -moz-animation-delay: 1.3s; }
+
+.delay1-5 {
+  -animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s; }
+
+.delay1-7 {
+  -animation-delay: 1.7s;
+  -webkit-animation-delay: 1.7s;
+  -moz-animation-delay: 1.7s; }
+
+.delay2 {
+  -animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s; }
+
 .top_menu {
   height: 141px;
   background-image: url(../img/top_menu_bg.jpg);
@@ -138,5 +168,12 @@ body::-webkit-scrollbar-thumb {
   color: #ffffff; }
   .footer p {
     line-height: 50px; }
+
+.ind_row {
+  padding-top: 20px;
+  padding-bottom: 20px !important; }
+
+.slider_tumb {
+  padding-top: 20px; }
 
 /*# sourceMappingURL=main.css.map */
