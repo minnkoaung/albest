@@ -176,4 +176,9 @@ body::-webkit-scrollbar-thumb {
 .slider_tumb {
   padding-top: 20px; }
 
+.searchmaid_container {
+  border: 1px solid #bebcc1;
+  border-radius: 10px;
+  padding: 16px; }
+
 /*# sourceMappingURL=main.css.map */
