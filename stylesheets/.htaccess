@@ -1,0 +1,9 @@
+<Files "main.scss">
+Order Allow,Deny
+Deny from all
+</Files>
+
+<Files "main.css.map">
+Order Allow,Deny
+Deny from all
+</Files>
