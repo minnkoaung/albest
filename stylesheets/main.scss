@@ -24,6 +24,15 @@ body::-webkit-scrollbar-thumb {
   background-color: $primary-color;
   outline: 1px solid $pealred;
 }
+::-moz-selection { 
+    color:#fff !important;
+    background: #00b6aa !important;
+}
+
+::selection {
+    color:#fff !important;
+    background: #00b6aa !important;
+}
 .delay0-5 {
     -animation-delay: 0.5s;
     -webkit-animation-delay: 0.5s;
@@ -133,7 +142,7 @@ body::-webkit-scrollbar-thumb {
     color:#fff;
 }
 .navbar_list{
-    margin-right: 55px;
+    margin-right: 50px;
 }
 .pic-contents{
    
@@ -227,6 +236,7 @@ body::-webkit-scrollbar-thumb {
     border: 1px solid $lightgrey;
     border-radius: 10px;
     padding: 16px;
+    margin-bottom: 40px;
 }
 
 

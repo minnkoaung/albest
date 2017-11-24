@@ -16,6 +16,14 @@ body::-webkit-scrollbar-thumb {
   background-color: #00b6aa;
   outline: 1px solid #f14f55; }
 
+::-moz-selection {
+  color: #fff !important;
+  background: #00b6aa !important; }
+
+::selection {
+  color: #fff !important;
+  background: #00b6aa !important; }
+
 .delay0-5 {
   -animation-delay: 0.5s;
   -webkit-animation-delay: 0.5s;
@@ -100,7 +108,7 @@ body::-webkit-scrollbar-thumb {
   color: #fff; }
 
 .navbar_list {
-  margin-right: 55px; }
+  margin-right: 50px; }
 
 .hero_img {
   width: 100%;
@@ -179,6 +187,7 @@ body::-webkit-scrollbar-thumb {
 .searchmaid_container {
   border: 1px solid #bebcc1;
   border-radius: 10px;
-  padding: 16px; }
+  padding: 16px;
+  margin-bottom: 40px; }
 
 /*# sourceMappingURL=main.css.map */
